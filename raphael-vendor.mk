@@ -729,7 +729,6 @@ PRODUCT_PACKAGES += \
     libril-qc-radioconfig \
     librilqmiservices \
     librpmb \
-    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-diag \
