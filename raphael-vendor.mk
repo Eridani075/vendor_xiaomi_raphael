@@ -600,6 +600,7 @@ PRODUCT_PACKAGES += \
     libshoebox \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
+    android.hardware.secure_element@1.0-impl \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
@@ -612,6 +613,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
+    vendor.qti.esepowermanager@1.1-impl \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
@@ -622,6 +624,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
+    jcos_nq_client \
     lib-imscmservice \
     lib-imsdpl \
     lib-imsqimf \
@@ -649,6 +652,7 @@ PRODUCT_PACKAGES += \
     libcacertclient \
     libcdfw \
     libcdfw_remote_api \
+    libchrome_vendor \
     libcne \
     libcneapiclient \
     libcneoplookup \
@@ -760,10 +764,12 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libxml \
     libxtadapter \
+    ls_nq_client \
     libwvdrmengine \
     qcrild_librilutils \
     qtibus \
     qtimutex \
+    se_nq_extn_client \
     unnhal-acc-adreno \
     unnhal-acc-common \
     unnhal-acc-hta \
@@ -778,6 +784,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
     vendor.qti.data.slm@1.0 \
+    vendor.qti.esepowermanager@1.0 \
+    vendor.qti.esepowermanager@1.1 \
     vendor.qti.gnss@1.0 \
     vendor.qti.gnss@1.1 \
     vendor.qti.gnss@1.2 \
@@ -930,6 +938,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti \
     qcrild \
     vendor.display.color@1.0-service \
+    vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.qccvndhal@1.0-service \
@@ -938,6 +947,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter@1.0-service \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor.qti.media.c2@1.0-service \
+    vendor.qti.secure_element@1.2-service \
     ims_rtp_daemon \
     imsdatadaemon \
     imsqmidaemon \
