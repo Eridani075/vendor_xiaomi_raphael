@@ -652,7 +652,7 @@ PRODUCT_PACKAGES += \
     libcacertclient \
     libcdfw \
     libcdfw_remote_api \
-    libchrome_vendor \
+    libchrome_ese \
     libcne \
     libcneapiclient \
     libcneoplookup \

@@ -9599,7 +9599,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libchrome_vendor",
+                "libchrome_ese",
                 "libhidlbase",
                 "libc++",
                 "libc",
@@ -10442,8 +10442,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libchrome_vendor",
-    stem: "libchrome",
+    name: "libchrome_ese",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10451,7 +10450,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libchrome.so",
+                "proprietary/vendor/lib64/libchrome_ese.so",
             ],
             shared_libs: [
                 "libbase",
@@ -13796,7 +13795,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libchrome_vendor",
+                "libchrome_ese",
                 "libhidlbase",
                 "se_nq_extn_client",
                 "libc++",
@@ -13936,7 +13935,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libchrome_vendor",
+                "libchrome_ese",
                 "libhidlbase",
                 "libc++",
                 "libc",
