@@ -503,6 +503,7 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
+    hwcomposer.qcom \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vulkan.adreno \
@@ -519,6 +520,7 @@ PRODUCT_PACKAGES += \
     libcdsp_default_listener \
     libcdsprpc \
     libdiag \
+    libdrmutils \
     libfastcvdsp_stub \
     libfastcvopt \
     libgpudataproducer \
@@ -533,6 +535,8 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation_stub \
     libscveObjectTracker \
     libscveObjectTracker_stub \
+    libsdedrm \
+    libsdmcore \
     libsdsprpc \
     libsysmon_cdsp_skel \
     libthermalclient \

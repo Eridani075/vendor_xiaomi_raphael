@@ -5331,6 +5331,122 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "hwcomposer.qcom",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/hwcomposer.qcom.so",
+            ],
+            shared_libs: [
+                "libsdmcore",
+                "libqservice",
+                "libbinder",
+                "libhardware",
+                "libhardware_legacy",
+                "libutils",
+                "libcutils",
+                "libsync",
+                "libqdutils",
+                "libqdMetaData",
+                "libdisplaydebug",
+                "libsdmutils",
+                "liblog",
+                "libgrallocutils",
+                "libui",
+                "libgpu_tonemapper",
+                "libhidlbase",
+                "libhidltransport",
+                "libdisplayconfig.qti",
+                "vendor.display.config@1.0",
+                "vendor.display.config@1.1",
+                "vendor.display.config@1.2",
+                "vendor.display.config@1.3",
+                "vendor.display.config@1.4",
+                "vendor.display.config@1.5",
+                "vendor.display.config@1.6",
+                "vendor.display.config@1.7",
+                "vendor.display.config@1.8",
+                "vendor.display.config@1.9",
+                "vendor.display.config@1.10",
+                "vendor.display.config@1.11",
+                "vendor.display.config@2.0",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.allocator@2.0",
+                "android.hardware.graphics.allocator@3.0",
+                "android.hardware.graphics.composer@2.2",
+                "android.hardware.graphics.composer@2.3",
+                "android.hardware.graphics.composer@2.4",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/hwcomposer.qcom.so",
+            ],
+            shared_libs: [
+                "libsdmcore",
+                "libqservice",
+                "libbinder",
+                "libhardware",
+                "libhardware_legacy",
+                "libutils",
+                "libcutils",
+                "libsync",
+                "libqdutils",
+                "libqdMetaData",
+                "libdisplaydebug",
+                "libsdmutils",
+                "liblog",
+                "libgrallocutils",
+                "libui",
+                "libgpu_tonemapper",
+                "libhidlbase",
+                "libhidltransport",
+                "libdisplayconfig.qti",
+                "vendor.display.config@1.0",
+                "vendor.display.config@1.1",
+                "vendor.display.config@1.2",
+                "vendor.display.config@1.3",
+                "vendor.display.config@1.4",
+                "vendor.display.config@1.5",
+                "vendor.display.config@1.6",
+                "vendor.display.config@1.7",
+                "vendor.display.config@1.8",
+                "vendor.display.config@1.9",
+                "vendor.display.config@1.10",
+                "vendor.display.config@1.11",
+                "vendor.display.config@2.0",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.allocator@2.0",
+                "android.hardware.graphics.allocator@3.0",
+                "android.hardware.graphics.composer@2.2",
+                "android.hardware.graphics.composer@2.3",
+                "android.hardware.graphics.composer@2.4",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.bluetooth_audio@2.0-impl",
     owner: "xiaomi",
     strip: {
@@ -6064,6 +6180,45 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdrmutils",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libdrmutils.so",
+            ],
+            shared_libs: [
+                "libdrm",
+                "libdisplaydebug",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdrmutils.so",
+            ],
+            shared_libs: [
+                "libdrm",
+                "libdisplaydebug",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libfastcvdsp_stub",
     owner: "xiaomi",
     strip: {
@@ -6630,6 +6785,90 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libscveCommon",
                 "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsdedrm",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsdedrm.so",
+            ],
+            shared_libs: [
+                "libdrm",
+                "libdrmutils",
+                "libdisplaydebug",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsdedrm.so",
+            ],
+            shared_libs: [
+                "libdrm",
+                "libdrmutils",
+                "libdisplaydebug",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsdmcore",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsdmcore.so",
+            ],
+            shared_libs: [
+                "libdisplaydebug",
+                "libsdmutils",
+                "libdrm",
+                "libdrmutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsdmcore.so",
+            ],
+            shared_libs: [
+                "libdisplaydebug",
+                "libsdmutils",
+                "libdrm",
+                "libdrmutils",
                 "libc++",
                 "libc",
                 "libm",
